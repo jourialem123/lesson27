@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity3</title>
+</head>
+<body>
+    <h2>Evaluate variables</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <script>
+var a=10;
+var b=20;
+
+document.getElementById("p1").innerHTML = eval("a + b");
+    document.getElementById("p2").innerHTML = eval(b-a);
+    document.getElementById("p3").innerHTML = eval(b/a);
+    document.getElementById("p4").innerHTML = eval(a*b);
+
+    </script>
+</body>
+</html>
