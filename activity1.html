@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity1</title>
+</head>
+<body>
+    <h2>Array sorting</h2>
+    <button onclick="ascending()">Acsending</button>
+    <button onclick="decending()">Decending</button>
+    <button onclick="stsort()">Sort</button>
+    <button onclick="streverse()">reverse</button>
+   <p id="p1"></p> 
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+<script>
+    var num=[10,49,76,35,3,2]
+    document.getElementById("p1").innerHTML="Original array of numbers is "+num;
+    function ascending(){
+        num.sort(function(a,b){return a-b});
+        document.getElementById("p2").innerHTML="Array of ascending order is "+num;
+    }
+    function decending() {
+        num.sort(function(a,b){return b-a});
+        document.getElementById("p3").innerHTML="Array of decending order is "+num;
+    }
+    var fruits=["Kiwi","litchy","Banana","Apple","Cherry"];
+    document.getElementById("p4").innerHTML="The original array of fruits is "+fruits;
+function stsort(){
+    fruits.sort();
+    document.getElementById("p5").innerHTML=fruits;
+}
+function streverse(){
+    fruits.reverse();
+    document.getElementById("p6").innerHTML=fruits;
+}
+</script>
+
+</body>
+</html>
