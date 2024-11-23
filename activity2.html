@@ -6,6 +6,19 @@
     <title>activity2</title>
 </head>
 <body>
-    
+   <h2>Array maps</h2> 
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <script>
+        var num=[12,45,87,7,34,99];
+        function prod(a){
+            return a*10;
+        }
+        var newarr=num.map(prod);
+        document.getElementById("p1").innerHTML=newarr;
+    </script>
 </body>
 </html>
